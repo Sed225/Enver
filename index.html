@@ -31,6 +31,14 @@
           <img src="images/Enver_logo.svg" alt="EnverLogo" />
         </a>
 
+        <button type="button" class="nav__drop-btn">
+          <img
+            src="images/DropMenu_btn.svg"
+            alt="dropMenu_btn"
+            class="drop-menu__icon"
+          />
+        </button>
+
         <ul class="nav__list">
           <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
           <li class="nav__list-item">
@@ -70,7 +78,7 @@
           </button>
         </div>
         <div class="hero__img">
-          <img src="images/Hero_img.png" alt="hero" />
+          <img src="images/Hero_img.png" alt="hero" class="hero" />
           <img
             src="images/line.svg"
             alt="line"
@@ -206,6 +214,107 @@
       <div class="container portfolio__container">
         <h2 class="section__title portfolio__title">Our Awesome Portofolio</h2>
 
+        <div class="portfolio__slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="portfolio__card">
+                  <img
+                    src="images/slide1.png"
+                    alt="filmSource"
+                    class="portfolio__card-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio__card">
+                  <img
+                    src="images/slide2.png"
+                    alt="furnSource"
+                    class="portfolio__card-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio__card">
+                  <img
+                    src="images/slide3.png"
+                    alt="appSource"
+                    class="portfolio__card-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio__card">
+                  <img
+                    src="images/slide1.png"
+                    alt="filmSource"
+                    class="portfolio__card-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio__card">
+                  <img
+                    src="images/slide2.png"
+                    alt="furnSource"
+                    class="portfolio__card-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio__card">
+                  <img
+                    src="images/slide3.png"
+                    alt="appSource"
+                    class="portfolio__card-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="container slider-container">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg
+                  width="8"
+                  height="13"
+                  viewBox="0 0 8 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.82486 12.4565C7.16841 12.1129 7.16841 11.5559 6.82486 11.2124L2.16869 6.55619L6.82486 1.90002C7.16841 1.55647 7.16841 0.999474 6.82486 0.655929C6.48132 0.312383 5.92432 0.312383 5.58077 0.655929L0.302555 5.93415C-0.0409903 6.27769 -0.0409904 6.83469 0.302555 7.17823L5.58077 12.4565C5.92432 12.8 6.48132 12.8 6.82486 12.4565Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-next">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.66122 13.8498C0.268526 13.4571 0.268526 12.8204 0.66122 12.4277L5.98352 7.1054L0.661219 1.7831C0.268525 1.39041 0.268525 0.753724 0.661219 0.361031C1.05391 -0.0316639 1.6906 -0.0316639 2.08329 0.36103L8.11662 6.39436C8.50932 6.78706 8.50932 7.42374 8.11662 7.81643L2.08329 13.8498C1.6906 14.2425 1.05391 14.2425 0.66122 13.8498Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <img
           src="images/circles.svg"
           alt="circles"
@@ -217,106 +326,6 @@
           class="img-item portfolio__line-item"
         />
         <div class="portfolio__bg-purple"></div>
-      </div>
-      <div class="portfolio__slider">
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="portfolio__card">
-                <img
-                  src="images/slide1.png"
-                  alt="filmSource"
-                  class="portfolio__card-img"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio__card">
-                <img
-                  src="images/slide2.png"
-                  alt="furnSource"
-                  class="portfolio__card-img"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio__card">
-                <img
-                  src="images/slide3.png"
-                  alt="appSource"
-                  class="portfolio__card-img"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio__card">
-                <img
-                  src="images/slide1.png"
-                  alt="filmSource"
-                  class="portfolio__card-img"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio__card">
-                <img
-                  src="images/slide2.png"
-                  alt="furnSource"
-                  class="portfolio__card-img"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="portfolio__card">
-                <img
-                  src="images/slide3.png"
-                  alt="appSource"
-                  class="portfolio__card-img"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="container slider-container">
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev">
-              <svg
-                width="8"
-                height="13"
-                viewBox="0 0 8 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.82486 12.4565C7.16841 12.1129 7.16841 11.5559 6.82486 11.2124L2.16869 6.55619L6.82486 1.90002C7.16841 1.55647 7.16841 0.999474 6.82486 0.655929C6.48132 0.312383 5.92432 0.312383 5.58077 0.655929L0.302555 5.93415C-0.0409903 6.27769 -0.0409904 6.83469 0.302555 7.17823L5.58077 12.4565C5.92432 12.8 6.48132 12.8 6.82486 12.4565Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-next">
-              <svg
-                width="9"
-                height="15"
-                viewBox="0 0 9 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.66122 13.8498C0.268526 13.4571 0.268526 12.8204 0.66122 12.4277L5.98352 7.1054L0.661219 1.7831C0.268525 1.39041 0.268525 0.753724 0.661219 0.361031C1.05391 -0.0316639 1.6906 -0.0316639 2.08329 0.36103L8.11662 6.39436C8.50932 6.78706 8.50932 7.42374 8.11662 7.81643L2.08329 13.8498C1.6906 14.2425 1.05391 14.2425 0.66122 13.8498Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <!-- /Portfolio -->

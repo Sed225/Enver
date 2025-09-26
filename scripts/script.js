@@ -1,14 +1,21 @@
+const dropBtn = document.querySelector(".nav__drop-btn");
+const navList = document.querySelector(".nav__list");
+
+dropBtn.onclick = function () {
+  navList.classList.toggle("nav__list-open");
+};
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  slidesPerView: 3,
-  slidesPerGroup: 1,
-  loopAddBlankSlides: 3,
+  slidesPerView: 1,
+  // slidesPerGroup: 1,
+  // loopAddBlankSlides: 3,
   spaceBetween: 24,
-  autoplay: {
-    delay: 3500,
-  },
+  // autoplay: {
+  //   delay: 3500,
+  // },
 
   // If we need pagination
   pagination: {
@@ -19,5 +26,13 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1080: {
+      slidesPerView: 3,
+    },
+    800: {
+      slidesPerView: 2,
+    },
   },
 });
