@@ -754,4 +754,8 @@ li {
   .img-item {
     transform: scale(62%);
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
