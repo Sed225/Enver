@@ -2,7 +2,12 @@ const dropBtn = document.querySelector(".nav__drop-btn");
 const navList = document.querySelector(".nav__list");
 
 dropBtn.onclick = function () {
-  navList.classList.toggle("nav__list-open");
+  const isOpen = navList.classList.toggle("nav__list-open");
+  if (isOpen === true) {
+    document.querySelector("html").style.overflow = "hidden";
+  } else {
+    document.querySelector("html").style.overflow = "auto";
+  }
 };
 
 const swiper = new Swiper(".swiper", {
@@ -13,9 +18,9 @@ const swiper = new Swiper(".swiper", {
   // slidesPerGroup: 1,
   // loopAddBlankSlides: 3,
   spaceBetween: 24,
-  // autoplay: {
-  //   delay: 3500,
-  // },
+  autoplay: {
+    delay: 3500,
+  },
 
   // If we need pagination
   pagination: {
